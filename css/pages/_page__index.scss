@@ -1,5 +1,15 @@
 #page__index {
+  margin-top: 15%;
   h1 {
     font-size: 2em;
+  }
+
+  #viewProjects {
+    .projectimage {
+      width: 50%;
+    }
+    .icon {
+      width: 10%;
+    }
   }
 }

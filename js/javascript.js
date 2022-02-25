@@ -9,9 +9,12 @@ var ft = now.toLocaleString("en-US", {
     hour12: true
 });
 console.log(now);
-if (20 <= hours && hours < 5) {
+if (20 <= hours && hours < 23) {
    introheader.style.background = "url(/images/header/nordlys.jpg)";
-} else if (5 <= hours && hours < 8){
+}
+else if (0 <= hours && hours < 5) {
+    introheader.style.background = "url(/images/header/nordlys.jpg)";
+ }  else if (5 <= hours && hours < 8){
     introheader.style.background = "url(/images/header/solopgang.jpg)";
 } else if (8 <= hours && hours < 12) {
 introheader.style.background = "url(/images/header/bjerg.jpg)"

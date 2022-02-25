@@ -130,8 +130,34 @@ html {
   scroll-behavior: smooth;
 }
 
+#header .introheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  height: 100vh;
+}
+
+#header h1 {
+  font-family: "Fjalla One", sans-serif;
+  position: absolute;
+  font-size: 4em;
+  color: #02529c;
+  text-shadow: 1px 1px 1px #fff, 4px 4px 0px #dc1e35;
+  top: 35%;
+  left: 25%;
+  z-index: 1;
+}
+
 #header img {
-  width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 #navbar {
@@ -144,12 +170,13 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #02529c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 100%;
   top: 0;
   z-index: 99;
+  font-family: "Bree Serif", serif;
 }
 
 #navbar a {
@@ -159,6 +186,7 @@ html {
   text-decoration: none;
   font-size: 1.5em;
   border-radius: 2%;
+  color: #fff;
 }
 
 #navbar #logo {
@@ -168,9 +196,28 @@ html {
   transition: 0.4s;
 }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #dc1e35;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 #navbar a.active {
@@ -179,13 +226,13 @@ html {
 }
 
 #navbar-links {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sticky {
@@ -198,8 +245,40 @@ html {
   margin-top: 15%;
 }
 
-#page__index h1 {
+#page__index h2 {
+  font-family: "Fjalla One", sans-serif;
+  color: #02529c;
   font-size: 2em;
+  text-shadow: 0.5px 0.5px 0.2px #fff, 2px 2px 0px #dc1e35;
+}
+
+#page__index button {
+  display: inline-block;
+  font-weight: 400;
+  color: #c36;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #c36;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#page__index button:hover {
+  color: white;
+  background-color: #c36;
+  cursor: pointer;
+}
+
+#page__index #skills .toolsicon {
+  width: 10%;
 }
 
 #page__index #viewProjects .projectimage {
@@ -208,5 +287,18 @@ html {
 
 #page__index #viewProjects .icon {
   width: 10%;
+}
+
+#page__index #viewOlderProjects .projectimage {
+  width: 50%;
+}
+
+#page__index #viewOlderProjects .icon {
+  width: 10%;
+}
+
+#page__index #contactme a {
+  color: #c36;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,9 +18,6 @@ fetch( endPoint ).then(
             </article>`
         }
 })
-console.log(endPoint);
-
-
 
 const projectpostsurl = "https://wordpress.danielfraisland.dk/wp-json/wp/v2/posts?_embed&categories=3";
 //
@@ -29,7 +26,6 @@ fetch(projectpostsurl)
     return response.json();
   })
   .then(function (projectposts) {
-    console.log(projectposts);
     appendProjectPosts(projectposts);
   });
 
@@ -37,7 +33,6 @@ fetch(projectpostsurl)
 function appendProjectPosts(projectposts) {
   let htmlTemplate = "";
   for (let post of projectposts) {
-    console.log(post);
     htmlTemplate += /*html*/`
       <div class="project">
       <img src="${getFeaturedImageUrl(post)}" class="projectimage">
@@ -46,13 +41,14 @@ function appendProjectPosts(projectposts) {
         <p>${post.content.rendered}</p>
         <a href="${post.x_metadata.Website}"><img src="images/icons/website.png" alt="View the Website" class="icon"></a>
         <a href="${post.x_metadata.Github}"><img src="images/icons/github.png" alt="View Code on Github" class="icon"></a>
+        <button onclick="${post.x_metadata.wordpresssite}">Mere info</button>
         </div>
       </div>
     `;
   }
   document.querySelector('#viewProjects').innerHTML = htmlTemplate;
 }
-
+console.log(projectpostsurl);
 
 const olderprojectsposturl = "https://wordpress.danielfraisland.dk/wp-json/wp/v2/posts?_embed&categories=6"
 fetch(olderprojectsposturl)

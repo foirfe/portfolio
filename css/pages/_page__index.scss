@@ -1,15 +1,61 @@
 #page__index {
   margin-top: 15%;
-  h1 {
+  h2 {
+    font-family: "Fjalla One", sans-serif;
+    color: #02529c;
     font-size: 2em;
+    text-shadow: 0.5px 0.5px 0.2px #fff, 2px 2px 0px #dc1e35;
   }
-
+  button {
+    display: inline-block;
+    font-weight: 400;
+    color: #c36;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #c36;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover {
+      color: white;
+      background-color: #c36;
+      cursor: pointer;
+    }
+  }
+  #skills {
+    .toolsicon {
+      width: 10%;
+    }
+  }
   #viewProjects {
+    .projectimage {
+      width: 50%;
+    }
+
+    .icon {
+      width: 10%;
+    }
+  }
+  #viewOlderProjects {
     .projectimage {
       width: 50%;
     }
     .icon {
       width: 10%;
+    }
+  }
+  #contactme {
+    a {
+      color: #c36;
+      text-decoration: none;
     }
   }
 }

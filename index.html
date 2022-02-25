@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Daníel Freyr - Multimediedesigner</title>
   </head>
   <body>
     <header id="header">
-      <img src="images/placeholder.png" alt="Placeholder" />
+      <div class="introheader" id="introheader">
+        <h1>Daníel Freyr</h1>
+        <img src="images/daniel-header.png" alt="Daníel Freyr" />
+      </div>
     </header>
     <div id="navbar">
-      <a href="#" id="logo">Daníel Freyr</a>
       <div id="navbar-links">
-        <a href="#aboutme">Om Mig</a>
-        <a href="#projects">Projekter </a>
-        <a href="#cv">CV</a>
+        <a href="#aboutme"><span class="underline">Om Mig</span></a>
+        <a href="#projects"><span class="underline">Projekter</span></a>
+        <a href="#cv"><span class="underline">CV</span></a>
       </div>
     </div>
 
     <main id="page__index">
       <article>
-        <h1>Daníel Freyr</h1>
         <section id="aboutme">
           <h2>Om mig</h2>
           <p>
@@ -34,7 +41,39 @@
             komme frem til en velfungerende løsning.
           </p>
         </section>
-        <section id="skills">Hvad jeg kan</section>
+        <section id="skills">
+          <h2>Hvad jeg kan</h2>
+          <p>Jeg har igennem mine år fået skabt mig erfaring med følgende:</p>
+          <img class="toolsicon" src="images/icons/html.png" alt="HTML" />
+          <img class="toolsicon" src="images/icons/css.png" alt="CSS" />
+          <img class="toolsicon" src="images/icons/sass.png" alt="SCSS" />
+          <img
+            class="toolsicon"
+            src="images/icons/javascript.png"
+            alt="javascript"
+          />
+          <img class="toolsicon" src="images/icons/react.png" alt="React" />
+          <img
+            class="toolsicon"
+            src="images/icons/wordpress.png"
+            alt="Wordpress"
+          />
+          <img
+            class="toolsicon"
+            src="images/icons/photoshop.png"
+            alt="Photoshop"
+          />
+          <img
+            class="toolsicon"
+            src="images/icons/adobexd.png"
+            alt="ADobe XD"
+          />
+          <img
+            class="toolsicon"
+            src="images/icons/adobepremierepro.png"
+            alt="Premiere Pro"
+          />
+        </section>
         <section id="projects">
           <h2>Projekter</h2>
           <div id="viewProjects"></div>
@@ -45,9 +84,19 @@
           <h2>CV</h2>
           <div id="viewCvPosts"></div>
         </section>
+        <section id="contactme">
+          <h2>Kom i kontakt!</h2>
+          <p>Du finder mig på disse sociale platforme:</p>
+          <div>SoMe Ikoner</div>
+          <p>
+            Ellers er du velkommen til at smide en
+            <a href="mailto:danielfreyr95@outlook.com">mail</a> min vej!
+          </p>
+        </section>
       </article>
     </main>
     <footer id="footer"></footer>
+    <script src="js/javascript.js"></script>
     <script src="js/wordpress.js"></script>
     <script src="js/navbar.js"></script>
   </body>

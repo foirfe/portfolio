@@ -137,6 +137,9 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,6 +156,26 @@ html {
   top: 35%;
   left: 25%;
   z-index: 1;
+}
+
+#header .someicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 2em;
+  z-index: 1;
+}
+
+#header .someicons li {
+  display: inline;
+  margin: 0 2% 0 2%;
+}
+
+#header .someicons a {
+  color: #dc1e35;
 }
 
 #header img {

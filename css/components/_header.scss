@@ -3,8 +3,8 @@
   .introheader {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     position: relative;
-
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -19,6 +19,21 @@
     top: 35%;
     left: 25%;
     z-index: 1;
+  }
+  .someicons {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 2em;
+    z-index: 1;
+    li {
+      display: inline;
+      margin: 0 2% 0 2%;
+    }
+    a {
+      color: #dc1e35;
+    }
   }
   img {
     position: relative;

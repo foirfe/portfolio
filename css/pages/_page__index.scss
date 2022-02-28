@@ -1,15 +1,25 @@
 #page__index {
-  margin-top: 15%;
+  p {
+    font-family: "Junge", serif;
+  }
   h2 {
+    margin: 2% 0 2% 0%;
+    text-align: center;
     font-family: "Fjalla One", sans-serif;
     color: #02529c;
     font-size: 2em;
     text-shadow: 0.5px 0.5px 0.2px #fff, 2px 2px 0px #dc1e35;
   }
+  h3 {
+    font-family: "Fjalla One", sans-serif;
+    color: #02529c;
+    font-size: 1.5em;
+    text-shadow: 0.25px 0.25px 0.2px #fff, 1px 1px 0px #dc1e35;
+  }
   button {
     display: inline-block;
     font-weight: 400;
-    color: #c36;
+    color: #02529c;
     text-align: center;
     white-space: nowrap;
     -webkit-user-select: none;
@@ -17,7 +27,7 @@
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #c36;
+    border: 1px solid #02529c;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border-radius: 3px;
@@ -25,28 +35,66 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
     &:hover {
-      color: white;
-      background-color: #c36;
+      color: #fff;
+      background-color: #dc1e35;
       cursor: pointer;
     }
   }
+  #aboutme {
+    p {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
   #skills {
+    p {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+    .toolsiconflex {
+      display: flex;
+      margin: 0 auto;
+      width: 50%;
+      flex-wrap: wrap;
+    }
     .toolsicon {
-      width: 10%;
+      width: 30%;
+      @media screen and (min-width: 720px) {
+        width: 20%;
+      }
+      @media screen and (min-width: 1080px) {
+        width: 10%;
+      }
     }
   }
   #viewProjects {
     .projectimage {
-      width: 50%;
+      width: 100%;
+      border-radius: 8px;
+      margin: 2% 1% 2% 1%;
     }
-
+    .projectcontent {
+      width: 46%;
+      margin: 0 auto;
+    }
     .icon {
       width: 10%;
+      @media screen and (min-width: 720px) {
+        width: 5%;
+      }
     }
   }
+  .project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   #viewOlderProjects {
     .projectimage {
-      width: 50%;
+      width: 100%;
+      border-radius: 8px;
+      margin: 2% 1% 2% 1%;
     }
     .icon {
       width: 10%;

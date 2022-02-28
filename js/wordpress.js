@@ -8,7 +8,7 @@ fetch( endPoint ).then(
         for (let i = 0; i < data.length; i++) {
 
           //Posts
-          viewCvPosts.innerHTML += `<article>
+          viewCvPosts.innerHTML += /*html*/ `<article>
             <h3 class="cvtitle">            
                 ${data[i].title.rendered}
             </h3>
@@ -35,9 +35,9 @@ function appendProjectPosts(projectposts) {
   for (let post of projectposts) {
     htmlTemplate += /*html*/`
       <div class="project">
-      <img src="${getFeaturedImageUrl(post)}" class="projectimage">
-        <h3>${post.title.rendered}</h3>
-        <div>
+      <a href="${post.x_metadata.Website}"><img src="${getFeaturedImageUrl(post)}" class="projectimage"></a>
+      <div class="projectcontent">
+      <h3>${post.title.rendered}</h3>
         <p>${post.content.rendered}</p>
         <a href="${post.x_metadata.Website}"><img src="images/icons/website.png" alt="View the Website" class="icon"></a>
         <a href="${post.x_metadata.Github}"><img src="images/icons/github.png" alt="View Code on Github" class="icon"></a>
@@ -65,9 +65,10 @@ fetch(olderprojectsposturl)
       console.log(post);
       htmlTemplate += /*html*/`
         <div class="project">
-        <img src="${getFeaturedImageUrl(post)}" class="projectimage">
-          <h3>${post.title.rendered}</h3>
-          <div>
+       <a href="${post.x_metadata.Website}"> <img src="${getFeaturedImageUrl(post)}" class="projectimage"></a>
+        <div class="projectcontent">
+        <h3>${post.title.rendered}</h3>
+          
           <p>${post.content.rendered}</p>
           <a href="${post.x_metadata.Website}"><img src="images/icons/website.png" alt="View the Website" class="icon"></a>
           </div>

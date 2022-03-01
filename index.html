@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fjalla+One&family=Junge&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/icons/icon.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/a94025042b.js"
       crossorigin="anonymous"
@@ -61,48 +62,75 @@
       <article>
         <section id="aboutme">
           <h2>Om mig</h2>
-          <p>
-            Velkommen til! Mit navn er Daníel Freyr, og jeg er en 26-årig
-            islænding bosat i Viby Jylland. Jeg er på nuværende tidspunkt i gang
-            med 3.semester som Multimediedesigner på Erhversakadamiet i Aarhus,
-            hvor jeg har Frontend som mit speciale. Jeg har en stor interesse
-            for det at programmere, men også forarbejdet det kræver, for at
-            komme frem til en velfungerende løsning.
-          </p>
+          <div class="textandimage">
+            <p>
+              Velkommen til! Mit navn er Daníel Freyr, og jeg er en 26-årig
+              islænding bosat i Viby Jylland. Jeg er på nuværende tidspunkt i
+              gang med 3.semester som Multimediedesigner på Erhversakadamiet i
+              Aarhus, hvor jeg har Frontend som mit speciale. Jeg har en stor
+              interesse for det at programmere, men også forarbejdet det kræver,
+              for at komme frem til en velfungerende løsning.
+            </p>
+
+            <img
+              src="images/aboutmedaniel.png"
+              alt="Daníel Freyr"
+              class="aboutmeimg"
+            />
+          </div>
         </section>
         <section id="skills">
           <h2>Hvad jeg kan</h2>
-          <p>Jeg har igennem mine år fået skabt mig erfaring med følgende:</p>
-          <div class="toolsiconflex">
-            <img class="toolsicon" src="images/icons/html.png" alt="HTML" />
-            <img class="toolsicon" src="images/icons/css.png" alt="CSS" />
-            <img class="toolsicon" src="images/icons/sass.png" alt="SCSS" />
-            <img
-              class="toolsicon"
-              src="images/icons/javascript.png"
-              alt="javascript"
-            />
-            <img class="toolsicon" src="images/icons/react.png" alt="React" />
-            <img
-              class="toolsicon"
-              src="images/icons/wordpress.png"
-              alt="Wordpress"
-            />
-            <img
-              class="toolsicon"
-              src="images/icons/photoshop.png"
-              alt="Photoshop"
-            />
-            <img
-              class="toolsicon"
-              src="images/icons/adobexd.png"
-              alt="ADobe XD"
-            />
-            <img
-              class="toolsicon"
-              src="images/icons/adobepremierepro.png"
-              alt="Premiere Pro"
-            />
+          <p class="skillsintrotext">
+            Brug for en hjemmeside? Grafisk Design? Noget Content til enten
+            hjemmeside eller SoMe? Så kan det være at det er mig du skulle have
+            fat i.
+          </p>
+          <div class="toolsandcompetences">
+            <div class="toolsiconflex">
+              <p>
+                Jeg har igennem mine år fået skabt mig erfaring med følgende
+                værktøjer:
+              </p>
+              <img class="toolsicon" src="images/icons/html.png" alt="HTML" />
+              <img class="toolsicon" src="images/icons/css.png" alt="CSS" />
+              <img class="toolsicon" src="images/icons/sass.png" alt="SCSS" />
+              <img
+                class="toolsicon"
+                src="images/icons/javascript.png"
+                alt="javascript"
+              />
+              <img class="toolsicon" src="images/icons/react.png" alt="React" />
+              <img
+                class="toolsicon"
+                src="images/icons/wordpress.png"
+                alt="Wordpress"
+              />
+              <img
+                class="toolsicon"
+                src="images/icons/photoshop.png"
+                alt="Photoshop"
+              />
+              <img
+                class="toolsicon"
+                src="images/icons/adobexd.png"
+                alt="ADobe XD"
+              />
+              <img
+                class="toolsicon"
+                src="images/icons/adobepremierepro.png"
+                alt="Premiere Pro"
+              />
+            </div>
+            <div class="competence">
+              <p>Og her er mine såkaldte "features"</p>
+              <ul>
+                <li><i class="fa-solid fa-check checkmark"></i>Feature</li>
+                <li><i class="fa-solid fa-check checkmark"></i>Feature 1</li>
+                <li><i class="fa-solid fa-check checkmark"></i>Feature 2</li>
+                <li><i class="fa-solid fa-check checkmark"></i>Feature 3</li>
+              </ul>
+            </div>
           </div>
         </section>
         <section id="projects">
@@ -110,7 +138,6 @@
           <div id="viewProjects"></div>
           <div id="viewOlderProjects"></div>
         </section>
-
         <section id="cv">
           <h2>CV</h2>
           <div id="viewCvPosts"></div>

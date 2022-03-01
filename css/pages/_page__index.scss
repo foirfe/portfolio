@@ -1,6 +1,12 @@
 #page__index {
   p {
     font-family: "Junge", serif;
+    @media screen and (min-width: 720px) {
+      font-size: 1.5em;
+    }
+    @media screen and (min-width: 1080px) {
+      font-size: 2em;
+    }
   }
   h2 {
     margin: 2% 0 2% 0%;
@@ -9,6 +15,9 @@
     color: #02529c;
     font-size: 2em;
     text-shadow: 0.5px 0.5px 0.2px #fff, 2px 2px 0px #dc1e35;
+    @media screen and (min-width: 1080px) {
+      font-size: 3.5em;
+    }
   }
   h3 {
     font-family: "Fjalla One", sans-serif;
@@ -42,14 +51,30 @@
   }
   #aboutme {
     p {
-      max-width: 75%;
-      margin: 0 auto;
+      max-width: 45%;
+    }
+    img {
+      width: 45%;
+    }
+    .textandimage {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
     }
   }
   #skills {
+    .checkmark {
+      color: green;
+      font-size: 2em;
+    }
+    .skillsintrotext {
+      width: 75%;
+    }
     p {
-      max-width: 75%;
       margin: 0 auto;
+    }
+    .toolsandcompetences {
+      display: flex;
     }
     .toolsiconflex {
       display: flex;
@@ -68,31 +93,78 @@
     }
   }
   #viewProjects {
+    a {
+      width: 50%;
+    }
+    .extrainfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      a {
+        width: 10%;
+      }
+    }
+    .project:nth-child(odd) {
+      background-color: rgb(126, 126, 126);
+      border-radius: 8x;
+    }
+    .project:nth-child(even) {
+      background-color: rgb(214, 214, 214);
+      border-radius: 8px;
+    }
     .projectimage {
-      width: 100%;
+      max-width: 100%;
       border-radius: 8px;
       margin: 2% 1% 2% 1%;
     }
-    .projectcontent {
-      width: 46%;
-      margin: 0 auto;
-    }
     .icon {
-      width: 10%;
+      width: 100%;
       @media screen and (min-width: 720px) {
-        width: 5%;
+        width: 100%;
       }
     }
   }
   .project {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 720px) {
+      h3 {
+        font-size: 2em;
+        margin-bottom: 3%;
+      }
+      p {
+        font-size: 1.25em;
+        margin: 1% 0 5% 0;
+      }
+    }
+    @media screen and (min-width: 1080px) {
+      h3 {
+        font-size: 3em;
+        margin-bottom: 2%;
+      }
+    }
+    .projectcontent {
+      width: 45%;
+      text-align: center;
+    }
   }
 
   #viewOlderProjects {
+    a {
+      width: 50%;
+    }
+    .project:nth-child(even) {
+      background-color: rgb(126, 126, 126);
+      border-radius: 8px;
+    }
+    .project:nth-child(odd) {
+      background-color: rgb(214, 214, 214);
+      border-radius: 8px;
+    }
     .projectimage {
-      width: 100%;
+      max-width: 100%;
       border-radius: 8px;
       margin: 2% 1% 2% 1%;
     }

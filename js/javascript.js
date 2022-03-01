@@ -9,7 +9,7 @@ var ft = now.toLocaleString("en-US", {
     hour12: true
 });
 console.log(now);
-if (20 <= hours && hours < 23) {
+if (20 <= hours && hours < 23.99) {
    introheader.style.background = "url(/images/header/nordlys.jpg)";
 }
 else if (0 <= hours && hours < 5) {
@@ -22,4 +22,5 @@ introheader.style.background = "url(/images/header/bjerg.jpg)"
     introheader.style.background = "url(/images/header/glacier.jpg)"
 } else if (17 <= hours && hours < 20){
     introheader.style.background = "url(/images/header/kirkjufell.jpg)"
+    scrolldown.style.color = "white";
 }

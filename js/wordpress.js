@@ -39,9 +39,11 @@ function appendProjectPosts(projectposts) {
       <div class="projectcontent">
       <h3>${post.title.rendered}</h3>
         <p>${post.content.rendered}</p>
+        <div class="extrainfo">
         <a href="${post.x_metadata.Website}"><img src="images/icons/website.png" alt="View the Website" class="icon"></a>
         <a href="${post.x_metadata.Github}"><img src="images/icons/github.png" alt="View Code on Github" class="icon"></a>
         <button onclick="${post.x_metadata.wordpresssite}">Mere info</button>
+      </div>
         </div>
       </div>
     `;

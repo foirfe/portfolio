@@ -1,5 +1,5 @@
 const introheader = document.getElementById("introheader");
-
+const wowding = document.getElementById("wowding"); 
 //Change background depending on time - Images are from pixabay.com
 var now = new Date();
 var hours = now.getHours();
@@ -37,3 +37,9 @@ contactme.style.background = "url(/images/header/bjerg.jpg)";
     scrolldown.style.color = "white";
     somecontact.style.color = "white";
 }
+
+wowding.addEventListener("click", function() {
+    const audio = new Audio("https://wow.zamimg.com/sound-ids/live/enus/249/569593"); //©2004 Blizzard Entertainment, Inc. All rights reserved. World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+    audio.volume = 0.2;
+    audio.play();
+})

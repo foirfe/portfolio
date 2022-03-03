@@ -517,7 +517,8 @@ html {
 }
 
 #page__index #aboutme p {
-  max-width: 45%;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 #page__index #aboutme img {

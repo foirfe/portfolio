@@ -1,26 +1,6 @@
-const endPoint = "https://wordpress.danielfraisland.dk/wp-json/wp/v2/posts/?categories=2&per_page=3"
-
-fetch( endPoint ).then(
-    response => {
-      return response.json(); // get JSON data
-    }).then(data => {
-
-        for (let i = 0; i < data.length; i++) {
-
-          //Posts
-          viewCvPosts.innerHTML += /*html*/ `<article>
-            <h3 class="cvtitle">            
-                ${data[i].title.rendered}
-            </h3>
-            <div class="post-content">
-              ${data[i].content.rendered}
-            <div>
-            </article>`
-        }
-})
-
+//Wordpress Rest API
 const projectpostsurl = "https://wordpress.danielfraisland.dk/wp-json/wp/v2/posts?_embed&categories=3";
-//
+
 fetch(projectpostsurl)
   .then(function (response) {
     return response.json();
@@ -51,7 +31,7 @@ function appendProjectPosts(projectposts) {
   document.querySelector('#viewProjects').innerHTML = htmlTemplate;
 }
 console.log(projectpostsurl);
-
+//Wordpress Rest API for Older Projects
 const olderprojectsposturl = "https://wordpress.danielfraisland.dk/wp-json/wp/v2/posts?_embed&categories=6"
 fetch(olderprojectsposturl)
   .then(function (response) {

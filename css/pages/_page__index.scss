@@ -49,6 +49,9 @@
       cursor: pointer;
     }
   }
+  section {
+    padding-top: 70px;
+  }
   #aboutme {
     p {
       max-width: 45%;
@@ -75,12 +78,17 @@
     }
     .toolsandcompetences {
       display: flex;
+      margin: 4% 0 2% 0;
     }
     .toolsiconflex {
       display: flex;
       margin: 0 auto;
-      width: 50%;
+      width: 45%;
       flex-wrap: wrap;
+      align-items: center;
+      p {
+        margin-bottom: 2%;
+      }
     }
     .toolsicon {
       width: 30%;
@@ -89,6 +97,29 @@
       }
       @media screen and (min-width: 1080px) {
         width: 10%;
+      }
+    }
+    .competence {
+      width: 45%;
+      font-family: "Junge", serif;
+      p {
+        margin-bottom: 2%;
+      }
+      li {
+        @media screen and (min-width: 720px) {
+          font-size: 1.5em;
+        }
+        @media screen and (min-width: 1080px) {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+  #projects {
+    h2 {
+      margin: 10% 0 4% 0;
+      @media screen and (min-width: 720px) {
+        margin: 10% 0 2% 0;
       }
     }
   }
@@ -173,8 +204,41 @@
     }
   }
   #contactme {
+    width: 80%;
+    padding-top: 0.5%;
+    @media screen and (min-width: 720px) {
+      width: 60%;
+    }
+    margin: 2% auto;
+    box-shadow: 8px 8px 3px rgb(204, 200, 200);
+    .flex {
+      display: flex;
+      padding: 2%;
+    }
+    h2 {
+      padding-top: 2%;
+    }
+    h3 {
+      padding-left: 2%;
+      @media screen and(min-width: 720px) {
+        font-size: 3.5em;
+      }
+    }
+    img {
+      width: 20%;
+      border-radius: 6px;
+    }
+    .contactinfo {
+      margin: 0 auto;
+    }
+    .somecontact {
+      padding-top: 2%;
+      i {
+        font-size: 2em;
+      }
+    }
     a {
-      color: #c36;
+      color: #dc1e35;
       text-decoration: none;
     }
   }

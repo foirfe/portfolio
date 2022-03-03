@@ -51,10 +51,15 @@
     </header>
     <div id="navbar">
       <div id="navbar-links">
-        <a href="#aboutme"><span class="underline">Om Mig</span></a>
-        <a href="#projects"><span class="underline">Projekter</span></a>
-        <a href="#cv"><span class="underline">CV</span></a>
-        <a href="#contactme"><span class="underline">Kontakt</span></a>
+        <a href="#aboutme" class="aboutme"
+          ><span class="underline">Om Mig</span></a
+        >
+        <a href="#projects" class="projects"
+          ><span class="underline">Projekter</span></a
+        >
+        <a href="#contactme" class="contactme"
+          ><span class="underline">Kontakt</span></a
+        >
       </div>
     </div>
 
@@ -83,7 +88,7 @@
           <h2>Hvad jeg kan</h2>
           <p class="skillsintrotext">
             Brug for en hjemmeside? Grafisk Design? Noget Content til enten
-            hjemmeside eller SoMe? Så kan det være at det er mig du skulle have
+            hjemmeside eller SoMe? Så kan det være, at det er mig du skulle have
             fat i.
           </p>
           <div class="toolsandcompetences">
@@ -123,12 +128,17 @@
               />
             </div>
             <div class="competence">
-              <p>Og her er mine såkaldte "features"</p>
+              <p>Hvad du kan forvente af mig:</p>
               <ul>
-                <li><i class="fa-solid fa-check checkmark"></i>Feature</li>
-                <li><i class="fa-solid fa-check checkmark"></i>Feature 1</li>
-                <li><i class="fa-solid fa-check checkmark"></i>Feature 2</li>
-                <li><i class="fa-solid fa-check checkmark"></i>Feature 3</li>
+                <li>
+                  <i class="fa-solid fa-check checkmark"></i>Samarbejdsvillig
+                </li>
+                <li><i class="fa-solid fa-check checkmark"></i>Åbensindet</li>
+                <li><i class="fa-solid fa-check checkmark"></i>Selvstændig</li>
+                <li><i class="fa-solid fa-check checkmark"></i>Ambitøs</li>
+                <li>
+                  <i class="fa-solid fa-check checkmark"></i>Kvalitetbevidst
+                </li>
               </ul>
             </div>
           </div>
@@ -138,26 +148,34 @@
           <div id="viewProjects"></div>
           <div id="viewOlderProjects"></div>
         </section>
-        <section id="cv">
-          <h2>CV</h2>
-          <div id="viewCvPosts"></div>
-        </section>
         <section id="contactme">
-          <h2>Kom i kontakt!</h2>
-          <p>Du finder mig på disse sociale platforme:</p>
-          <div>
-            <a href="https://www.facebook.com/DanielFreyr19"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/dan%C3%ADel-freyr-gunnarsson-617105b6/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+          <h2 id="contactheader1">Kom i kontakt!</h2>
+          <div class="contactinfo">
+            <h3 id="contactheader2">Daníel Freyr</h3>
+            <div class="flex">
+              <div class="somecontact" id="somecontact">
+                <p>Telefon: +45 22 23 34 70</p>
+                <p>
+                  Mail:
+                  <a href="mailto:danielfreyr95@outlook.com"
+                    >daniel95@outlook.com</a
+                  >
+                </p>
+                <p style="display: inline">
+                  Du finder mig også på disse sociale platforme:
+                </p>
+                <a href="https://www.facebook.com/DanielFreyr19"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/dan%C3%ADel-freyr-gunnarsson-617105b6/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+
+              <img src="images/contactme.jpg" alt="Contact Daníel Freyr" />
+            </div>
           </div>
-          <p>
-            Ellers er du velkommen til at smide en
-            <a href="mailto:danielfreyr95@outlook.com">mail</a> min vej!
-          </p>
         </section>
       </article>
     </main>

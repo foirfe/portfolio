@@ -642,7 +642,7 @@ html {
 
 #page__index #viewProjects .project:nth-child(odd) {
   background-color: #7e7e7e;
-  border-radius: 8x;
+  border-radius: 8px;
 }
 
 #page__index #viewProjects .project:nth-child(even) {

@@ -611,6 +611,43 @@ html {
   }
 }
 
+#page__index #skills .cvbutton {
+  margin: 5% 0;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#page__index #skills .cvbutton a {
+  font-weight: 400;
+  color: #02529c;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #02529c;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 1080px) {
+  #page__index #skills .cvbutton a {
+    font-size: 2em;
+  }
+}
+
+#page__index #skills .cvbutton a:hover {
+  color: #fff;
+  background-color: #dc1e35;
+  cursor: pointer;
+}
+
 #page__index #projects h2 {
   margin: 10% 0 4% 0;
 }

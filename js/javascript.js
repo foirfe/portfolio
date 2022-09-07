@@ -1,4 +1,5 @@
 const introheader = document.getElementById("introheader");
+const agefield = document.getElementById("age");
 const wowding = document.getElementById("wowding"); 
 //Change background depending on time - Images are from pixabay.com
 var now = new Date();
@@ -43,3 +44,17 @@ wowding.addEventListener("click", function() {
     audio.volume = 0.2;
     audio.play();
 })
+
+function setAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    agefield.innerText = age;
+    return age;
+}
+
+setAge("1995-10-18");
